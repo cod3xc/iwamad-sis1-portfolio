@@ -279,7 +279,7 @@ input.input-error, textarea.input-error {
   }
 }
 
-@media (max-width: 32rem) {
+@media (max-width: 30rem) {
   .nav-list {
     gap: 0;
   }
