@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arslan Alisher - Portfolio</title>
+  <meta name="description" content="Portfolio of Arslan Alisher: IT Management student at KBTU who loves games and web development.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container bar">
+      <a class="brand" href="#top">Arslan A.</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="btn btn-ghost" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <h1>Hi, I'm Arslan Alisher</h1>
+      <p class="lead">IT Management student at KBTU who loves games and is learning to build web interfaces.</p>
+      <a class="btn" href="#projects">See my projects</a>
+    </section>
+
+    <section id="about" class="container section" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <div class="about-grid">
+        <img class="avatar" src="me.jpg" alt="Portrait photo of Arslan Alisher" width="160" height="160">
+        <div>
+          <p>I'm a third-year undergraduate studying IT Management at KBTU. I'm passionate about games, and I also love sleeping, so you could say my hobbies are well balanced.</p>
+          <p>This semester I started building real interfaces with React, TypeScript and Tailwind CSS. I'll be honest: I don't like very hard courses, but I do like it when something I built finally works on screen.</p>
+          <ul class="skills" aria-label="Skills">
+            <li>Gaming</li><li>HTML &amp; CSS</li><li>JavaScript</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container section" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Profile Card</h3>
+          <p>My Week 4 React and TypeScript app: a reusable profile card component with my photo, bio and links, styled with Tailwind CSS.</p>
+          <a href="https://cod3xc.github.io/iwamad-practice/" target="_blank" rel="noopener">Open live page</a>
+        </article>
+        <article class="card">
+          <h3>Shared Like Counter</h3>
+          <p>A like button whose count is shared between the card and the header badge using React Context, with unit tests written for it.</p>
+          <a href="https://github.com/cod3xc/iwamad-practice" target="_blank" rel="noopener">View repository</a>
+        </article>
+        <article class="card">
+          <h3>Multi-page App with Routing</h3>
+          <p>The Home, Skills and Contact pages of the same app, connected with React Router and deployed to GitHub Pages.</p>
+          <a href="https://cod3xc.github.io/iwamad-practice/skills" target="_blank" rel="noopener">Open Skills page</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container section" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" aria-describedby="name-error">
+          <p class="error" id="name-error" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error">
+          <p class="error" id="email-error" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" aria-describedby="message-error"></textarea>
+          <p class="error" id="message-error" role="alert"></p>
+        </div>
+        <button class="btn" type="submit">Send message</button>
+        <p id="form-success" class="success" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© 2026 Arslan Alisher · <a href="mailto:a_alisher@kbtu.kz">a_alisher@kbtu.kz</a> · <a href="https://github.com/cod3xc" target="_blank" rel="noopener">GitHub</a></p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
